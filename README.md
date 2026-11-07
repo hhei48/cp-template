@@ -1,2 +1,2 @@
 # 🧠 CP Template
-My C++ competitive programming template from grade 8.
+My C++ competitive programming template, since grade 8. 
