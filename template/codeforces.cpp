@@ -1,38 +1,9 @@
-//udontur's template
-//https://github.com/udontur
-//ACCEPTED? I bet on this code
+// @hhei48
+// www.hadrian.cc
 
-#include <cctype>
-#include <cmath>
-#include <cstdlib>
-#include <cstdio>
-#include <algorithm>
-#include <bitset>
-#include <complex>
-#include <deque>
-#include <functional>
-#include <iomanip>
-#include <ios>
-#include <iosfwd>
-#include <iostream>
-#include <iterator>
-#include <limits>
-#include <list>
-#include <map>
-#include <memory> 
-#include <queue> 
-#include <chrono>
-#include <set>
-#include <stack>
-#include <string>
-#include <utility>
-#include <vector>
-#include <array>
-#include <forward_list>
-#include <initializer_list>
-#include <unordered_map>
-#include <unordered_set>
+#include <bits/stdc++.h>
 using namespace std;
+
 #define int long long
 #define mp make_pair
 #define pb push_back
@@ -43,12 +14,18 @@ using namespace std;
 #define pi acos((lb)-1)
 #define all(a) (a).begin(), (a).end()
 #define dbg(v) cout << #v << ":_" << (v) << endl;
+#define ump(x, y) unordered_map<x, y, cus>
+
 const int inf=1e18;
 const int INT_MX=9223372036854775807;
 const int INT_MN=-9223372036854775807;
 const int mod=1e9+7;
 const int dx[4]{1, 0, -1, 0}, dy[4]{0, 1, 0, -1};
+
+// rm duplicate elements in a list
 template<class T>void xdup(vector<T> &v){sort(all(v));v.erase(unique(all(v)), end(v));}
+
+// hasing algo to prevent testcase hacking
 struct cus{static uint64_t splitmix64(uint64_t x){
 x+=0x9e3779b97f4a7c15;
 x=(x^(x>>30))*0xbf58476d1ce4e5b9;
@@ -56,22 +33,23 @@ x=(x^(x>>27))*0x94d049bb133111eb;return x^(x>>31);}
 size_t operator()(uint64_t x)const{
 static const uint64_t fixrand=chrono::steady_clock::now().time_since_epoch().count();
 return splitmix64(x+fixrand);}};
-#define ump(x, y) unordered_map<x, y, cus>
+
+// fast power
 int fpow(int a, int b){int res=1;
 while(b>0){if(b&1) res*=a;a*=a;b>>=1;
 }return res;}int fpowmod(int a, int b, int mod){int res=1;
 while(b>0){if(b&1) res=((res%mod)*(a%mod))%mod;
 a=((a%mod)*(a%mod))%mod;b>>=1;
 }return res%mod;}
+
 void yes(){cout<<"YES\n";}
 void no(){cout<<"NO\n";}
 
-//udontur
 //LETS GET CODING
-//ADD OIL, BRO AC
+//ADD OIL AC!!!
 
-void udontur(){
-	
+void hhei48(){
+
 	return;
 }
 
@@ -82,12 +60,12 @@ void udontur(){
 int32_t main(){
 	ios_base::sync_with_stdio(false);
     cin.tie(nullptr);
-	
-	int tt=0; cin >> tt; while(tt--) 
-	
-	udontur();
+
+	int tt=0; cin >> tt; while(tt--)
+
+	hhei48();
     return 0;
-    
+
 }
 
 /**********WA, TLE???***************
